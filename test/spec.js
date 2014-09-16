@@ -1,4 +1,9 @@
 describe('Pluralize', function() {
+
+  it('should return cups if we pass 0', function() {
+    expect( pluralize("cup", 1) ).toBe("cups");
+  });
+
   it('should return cat if we pass 1', function() {
     expect( pluralize("cat", 1) ).toBe("cat");
   });
